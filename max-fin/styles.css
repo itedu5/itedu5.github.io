@@ -1,0 +1,106 @@
+/* Шрифты */
+/*
+    sans-serif:
+    - Arial,
+    - Verdana,
+    - Tahoma,
+    - Trebuchet MS
+
+    serif:
+    - Times New Roman, 
+    - Georgia
+    - Garamond
+
+    другие:
+    - Courier New (monospace)
+    - Brush Script MT (cursive)
+*/
+
+/* Общие стили */
+body {
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    background-color: #a7a7a7;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #c60000;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: fantasy;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Меню */
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #989898;
+    list-style: none;
+    padding: 10px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: white;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.intro,
+.video-section,
+.services {
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    display: block;
+    margin: auto;
+}
+
+/* Подвал */
+footer {
+    background-color: #000;
+    color: #710000;
+    text-align: center;
+    padding: 10px;
+}
