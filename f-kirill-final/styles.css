@@ -1,0 +1,181 @@
+/* Шрифты */
+/*
+    sans-serif:
+    - Arial,
+    - Verdana,
+    - Tahoma,
+    - Trebuchet MS
+
+    serif:
+    - Times New Roman, 
+    - Georgia
+    - Garamond
+
+    другие:
+    - Courier New (monospace)
+    - Brush Script MT (cursive)
+*/
+secret{
+    position: absolute;
+    transform: scale(0.2);
+    top: 70px;
+    left:500px;
+    opacity:0.3;   
+}
+
+
+
+.cooldropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .cooldropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #333;
+        color: white;
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .cooldropdown:hover .cooldropdown-content {
+        max-height: 200px;
+        /* Adjust based on content height */
+    }
+
+
+/* Общие стили */
+body {
+
+    font-family:  'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7f84a0;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn  2s forwards;
+}
+
+
+@keyframes fadeIn{
+    0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+    
+    
+}
+
+
+.img-fadeIn{
+    
+    transform: translateY(140px);
+    opacity: 0;
+    animation: imgAppear 4s forwards;
+}
+
+@keyframes  imgAppear{
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+    
+}
+
+
+
+.hover-grow:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+.hover-grow:active{
+    transform: scale(0.1);
+    transition: 0.2s;
+    
+    
+}
+
+header {
+    background-color: #0432f4;
+    color: #fff608;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Меню */
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #00ff76;
+    text-decoration: none;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff500;
+    list-style: none;
+    padding: 10px;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: #333;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.intro,
+.video-section,
+.services {
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    display: block;
+    margin: auto;
+}
+
+/* Подвал */
+footer {
+    background-color: #fff608;
+    color: #0025f4;
+    text-align: center;
+    padding: 10px;
+}

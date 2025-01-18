@@ -1,0 +1,191 @@
+/* Шрифты */
+/*
+    sans-serif:
+    - Arial,
+    - Verdana,
+    - Tahoma,
+    - Trebuchet MS
+
+    serif:
+    - Times New Roman, 
+    - Georgia
+    - Garamond
+
+    другие:
+    - Courier New (monospace)
+    - Brush Script MT (cursive)
+*/
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4A460;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header {
+    background-color: #D2B48C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+        z-index:100;
+    
+}
+
+h1{
+    font-family: 'Georgia', serif;
+    color: #8B4513
+           
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+}
+.img-fadein{
+    transform: translateY(140px);
+    opacity: 0;
+    animation: imgAppear 4s forwards;
+    height: 40vh;
+    width: 100vw;
+}
+.img-fadein:active{
+    transform: scale(100000000000000);
+    transition: 0.5s
+}
+@keyframes imgAppear{
+    100%{
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+/* Меню */
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.cooldropdown a href{
+    color: #8B4513
+}
+  .cooldropdown { 
+    position: relative; 
+    display: inline-block; 
+  } 
+.secret{
+    position: absolute;
+    transform: scale(0.2);
+    top:100px;
+    left:-40px;
+    opacity:0.3;
+}
+  .cooldropdown-content { 
+    max-height: 0;
+    position: absolute;
+    overflow: hidden; 
+    background-color: #D2B48C; 
+    color: white; 
+    padding: 0; 
+    margin: 0; 
+    transition: max-height 0.3s ease-out; 
+  } 
+.secret:hover{
+    opacity: 0;
+}
+.intro h6{
+    position: absolute;
+    left: 50vw;
+    opacity: 0;
+    height: 50vh;
+    width: 100vh;
+}
+  .cooldropdown:hover .cooldropdown-content { 
+    max-height: 200px; /* Adjust based on content height */ 
+  } 
+  
+.menu .cooldropdown:hover .cooldropdown-content {
+    display: block;
+}
+.menu .cooldropdown:active .cooldropdown-content {
+    transform: scale(100000000000000);
+    transition: 0.5s
+}
+.cooldropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D2B48C;
+    list-style: none;
+    padding: 10px;
+}
+
+.cooldropdown-content li:hover{
+    margin: 5px 0;
+    transform: scale(1.3);
+    transition: 0.5s
+}
+
+/*.dropdown:hover {
+    margin: 5px 0;
+    transform: scale(1.5);
+    transition: 0.5s
+}*/
+
+.cooldropdown-content a {
+    color: white;
+}
+
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.intro,
+.video-section,
+.services {
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    display: block;
+    margin: auto;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

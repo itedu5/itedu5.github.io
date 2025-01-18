@@ -1,0 +1,188 @@
+/* Шрифты */
+/*
+    sans-serif:
+    - Arial,
+    - Verdana,
+    - Tahoma,
+    - Trebuchet MS
+
+    serif:
+    - Times New Roman, 
+    - Georgia
+    - Garamond
+
+    другие:
+    - Courier New (monospace)
+    - Brush Script MT (cursive)
+*/
+
+/* Общие стили */
+body {
+    font-family: fortnitebattlefest;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.secret{
+    position: absolute;
+    transform: scale(0.5);
+    top: 400px;
+    left: 500px;
+    opacity: 0.3;
+}
+
+.cooldropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cooldropdown-content {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    height: 500px;
+    transition: max-height 0.3s ease-out;
+}
+
+.cooldropdown:hover .cooldropdown-content {
+    max-height: 300px;
+    /* Adjust based on content height */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hover-grow:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+.hover-grow:active {
+    transform: scale(0.1);
+    transition: 0.2s;
+}
+
+.img-fadein {
+    transform: translateY(140px);
+    opacity: 1;
+}
+
+header {
+    background-color: #387da2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: fortnitebattlefest;
+    src: url(fortnitebattlefest.ttf) format('truetype');
+}
+
+h1 {
+    font-family: fortnitebattlefest;
+    font-size: 40px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Меню */
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #387da2;
+    list-style: none;
+    padding: 10px;
+    color: #303030;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: rgb(255, 255, 255);
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.intro,
+.video-section,
+.services {
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    display: block;
+    margin: auto;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: rgb(180, 180, 180);
+    text-align: center;
+    padding: 10px;
+    font-family: abc;
+}
+
+.a1 {
+    color: #e6e6e6;
+    font-size: 20px;
+
+}
+
+h3 {
+    font-size: 30px;
+    font-family: fortnitebattlefest;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: fortnitebattlefest;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+  .cooldropdown { 
+    position: relative; 
+    display: inline-block; 
+  } 
+ 
+  .cooldropdown-content { 
+    max-height: 0; 
+    overflow: hidden; 
+    background-color: #333; 
+    color: white; 
+    padding: 0; 
+    margin: 0; 
+    transition: max-height 0.3s ease-out; 
+  } 
+ 
+  .cooldropdown:hover .cooldropdown-content { 
+    max-height: 200px; /* Adjust based on content height */ 
+  } 
+  
+    
+    </style>
+<body>
+  
+<div class="dropdown"> 
+  <button>Hover Me</button> 
+  <div class="dropdown-content"> 
+    <p>Option 1</p> 
+    <p>Option 2</p> 
+    <p>Option 3</p> 
+  </div> 
+</div> 
+
+</body>
+</html>
